@@ -8,16 +8,16 @@ environment:
   sdk: ">=3.4.3 <4.0.0"
 
 dependencies:
+  cupertino_icons: ^1.0.6
   flutter:
     sdk: flutter
-
-  cupertino_icons: ^1.0.6
+  flutter_svg: ^2.0.10+1
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
 
   flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
 
 flutter:
   uses-material-design: true
@@ -34,4 +34,4 @@ flutter_assets:
   assets_path: assets/images
   output_path: lib/utils
   filename: app_images.dart
-  field_prefix:
+  field_prefix: null
