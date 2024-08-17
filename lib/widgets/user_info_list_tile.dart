@@ -8,20 +8,23 @@ class UserInfoListTile extends StatelessWidget {
   final UserInfoModel userInfoModel;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: const Color(0xffFAFAFA),
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: ListTile(
-        leading: SvgPicture.asset(userInfoModel.image),
-        title: Text(
-          userInfoModel.name,
-          style: AppStyles.styleSemiBold16,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 8),
+      child: Container(
+        decoration: BoxDecoration(
+          color: const Color(0xffFAFAFA),
+          borderRadius: BorderRadius.circular(12),
         ),
-        subtitle: Text(
-          userInfoModel.email,
-          style: AppStyles.styleRegular12,
+        child: ListTile(
+          leading: SvgPicture.asset(userInfoModel.image),
+          title: Text(
+            userInfoModel.name,
+            style: AppStyles.styleSemiBold16,
+          ),
+          subtitle: Text(
+            userInfoModel.email,
+            style: AppStyles.styleRegular12,
+          ),
         ),
       ),
     );

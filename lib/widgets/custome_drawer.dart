@@ -17,34 +17,35 @@ class CustomeDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 28),
       color: Colors.white,
       child: const CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
-              child: UserInfoListTile(userInfoModel: userInfoModel)),
-          // SizedBox(height: 8),
+            child: UserInfoListTile(userInfoModel: userInfoModel),
+          ),
           DrawerItemListView(),
-          // Spacer(),
           SliverFillRemaining(
             hasScrollBody: false,
-            child: Column(
-              children: [
-                Expanded(child: SizedBox(height: 20)),
-                InActiveDrawerItem(
-                  drawerItemModel: DrawerItemModel(
-                    image: Assets.imagesSetting,
-                    title: 'Setting system',
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              child: Column(
+                children: [
+                  Expanded(child: SizedBox(height: 20)),
+                  InActiveDrawerItem(
+                    drawerItemModel: DrawerItemModel(
+                      image: Assets.imagesSetting,
+                      title: 'Setting system',
+                    ),
                   ),
-                ),
-                InActiveDrawerItem(
-                  drawerItemModel: DrawerItemModel(
-                    image: Assets.imagesLogout,
-                    title: 'Logout Account',
+                  InActiveDrawerItem(
+                    drawerItemModel: DrawerItemModel(
+                      image: Assets.imagesLogout,
+                      title: 'Logout Account',
+                    ),
                   ),
-                ),
-                SizedBox(height: 48),
-              ],
+                  SizedBox(height: 48),
+                ],
+              ),
             ),
           ),
         ],
