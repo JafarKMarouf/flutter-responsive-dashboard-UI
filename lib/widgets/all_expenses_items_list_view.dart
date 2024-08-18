@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:responsive_dashborad/models/all_expenses_item_model.dart';
 import 'package:responsive_dashborad/utils/app_images.dart';
@@ -41,42 +40,29 @@ class _AllExpensesItemsListViewState extends State<AllExpensesItemsListView> {
       children: items.asMap().entries.map((e) {
         int index = e.key;
         var item = e.value;
-        if (index == 1) {
-          return Expanded(
-            child: GestureDetector(
-              onTap: () {
-                if (selectedIndex != index) {
-                  setState(() {
-                    selectedIndex = index;
-                  });
-                }
-              },
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 12.0),
-                child: AllExpensesItem(
-                  allExpensesItemModel: item,
-                  isSelected: selectedIndex == index,
-                ),
-              ),
-            ),
-          );
-        } else {
-          return Expanded(
-            child: GestureDetector(
-              onTap: () {
-                if (selectedIndex != index) {
-                  setState(() {
-                    selectedIndex = index;
-                  });
-                }
-              },
-              child: AllExpensesItem(
-                allExpensesItemModel: item,
-                isSelected: selectedIndex == index,
-              ),
-            ),
-          );
-        }
+        return Expanded(
+          child: GestureDetector(
+            onTap: () {
+              if (selectedIndex != index) {
+                setState(() {
+                  selectedIndex = index;
+                });
+              }
+            },
+            child: (index == 1)
+                ? Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                    child: AllExpensesItem(
+                      allExpensesItemModel: item,
+                      isSelected: selectedIndex == index,
+                    ),
+                  )
+                : AllExpensesItem(
+                    allExpensesItemModel: item,
+                    isSelected: selectedIndex == index,
+                  ),
+          ),
+        );
       }).toList(),
     );
   }

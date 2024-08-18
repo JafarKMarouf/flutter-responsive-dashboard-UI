@@ -8,13 +8,10 @@ class UserInfoListTile extends StatelessWidget {
   final UserInfoModel userInfoModel;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 8),
-      child: Container(
-        decoration: BoxDecoration(
-          color: const Color(0xffFAFAFA),
-          borderRadius: BorderRadius.circular(12),
-        ),
+    return Card(
+      elevation: 0,
+      color: const Color(0xffFAFAFA),
+      child: Center(
         child: ListTile(
           leading: SvgPicture.asset(userInfoModel.image),
           title: Text(
