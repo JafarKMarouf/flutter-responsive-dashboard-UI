@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashborad/widgets/custome_button.dart';
-import 'package:responsive_dashborad/widgets/title_text_feild.dart';
+import 'package:responsive_dashborad/widgets/title_text_field.dart';
 
 class QuickInvoicForm extends StatelessWidget {
   const QuickInvoicForm({super.key});
@@ -12,14 +12,14 @@ class QuickInvoicForm extends StatelessWidget {
         Row(
           children: [
             Expanded(
-              child: TitleTextFeild(
+              child: TitleTextField(
                 title: 'Customer name',
                 hint: 'Type customer name',
               ),
             ),
             SizedBox(width: 16),
             Expanded(
-              child: TitleTextFeild(
+              child: TitleTextField(
                 title: 'Customer Email',
                 hint: 'Type customer email',
               ),
@@ -30,14 +30,14 @@ class QuickInvoicForm extends StatelessWidget {
         Row(
           children: [
             Expanded(
-              child: TitleTextFeild(
+              child: TitleTextField(
                 title: 'Item name',
                 hint: 'Type customer name',
               ),
             ),
             SizedBox(width: 16),
             Expanded(
-              child: TitleTextFeild(
+              child: TitleTextField(
                 title: 'Item mount',
                 hint: 'USD',
               ),

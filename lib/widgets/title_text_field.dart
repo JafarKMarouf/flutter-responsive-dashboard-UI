@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashborad/utils/app_styles.dart';
-import 'package:responsive_dashborad/widgets/custome_text_feild.dart';
+import 'package:responsive_dashborad/widgets/custome_text_field.dart';
 
-class TitleTextFeild extends StatelessWidget {
-  const TitleTextFeild({super.key, required this.title, required this.hint});
+class TitleTextField extends StatelessWidget {
+  const TitleTextField({super.key, required this.title, required this.hint});
   final String title, hint;
   @override
   Widget build(BuildContext context) {

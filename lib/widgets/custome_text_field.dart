@@ -18,6 +18,7 @@ class CustomeTextFeild extends StatelessWidget {
         enabledBorder: buildBorder(),
         focusedBorder: buildBorder(),
       ),
+      readOnly: true,
     );
   }
 
