@@ -7,28 +7,22 @@ class TransactionHistoryListView extends StatelessWidget {
 
   static const items = [
     TransactionModel(
-      title: 'title',
+      title: 'Cash Withdrawal',
       date: '13 April 2024',
-      amount: 'amount',
+      amount: r'$20,129',
       isWithdrawal: true,
     ),
     TransactionModel(
-      title: 'title',
-      date: '13 April 2024',
-      amount: 'amount',
+      title: 'Landing Page project',
+      date: '13 Apr, 2022 at 3:30 PM',
+      amount: r'$2,000',
       isWithdrawal: false,
     ),
     TransactionModel(
-      title: 'title',
+      title: 'Juni Mobile App project',
       date: '13 April 2024',
-      amount: 'amount',
+      amount: r'$20,129',
       isWithdrawal: true,
-    ),
-    TransactionModel(
-      title: 'title',
-      date: '13 April 2024',
-      amount: 'amount',
-      isWithdrawal: false,
     ),
   ];
   @override

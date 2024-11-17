@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashborad/widgets/custome_container.dart';
 import 'package:responsive_dashborad/widgets/dots_indecator.dart';
 import 'package:responsive_dashborad/widgets/my_card_header.dart';
 import 'package:responsive_dashborad/widgets/my_cards_page_view.dart';

@@ -8,7 +8,7 @@ class MyCardHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       'My card',
-      style: AppStyles.styleSemiBold20.copyWith(color: const Color(0xff064061)),
+      style: AppStyles.styleBold20.copyWith(color: const Color(0xff064061)),
     );
   }
 }
