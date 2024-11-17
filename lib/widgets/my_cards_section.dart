@@ -26,17 +26,15 @@ class _MyCardsSectionState extends State<MyCardsSection> {
 
   @override
   Widget build(BuildContext context) {
-    return CustomeContainer(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const MyCardHeader(),
-          const SizedBox(height: 20),
-          MyCardsPageView(pageController: pageController),
-          const SizedBox(height: 19),
-          DotsIndecator(currentPageIndex: currentPageIndex),
-        ],
-      ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const MyCardHeader(),
+        const SizedBox(height: 20),
+        MyCardsPageView(pageController: pageController),
+        const SizedBox(height: 19),
+        DotsIndecator(currentPageIndex: currentPageIndex),
+      ],
     );
   }
 }
