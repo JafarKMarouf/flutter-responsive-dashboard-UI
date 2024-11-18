@@ -3,8 +3,8 @@ import 'package:responsive_dashborad/widgets/custome_container.dart';
 import 'package:responsive_dashborad/widgets/my_cards_section.dart';
 import 'package:responsive_dashborad/widgets/transaction_history.dart';
 
-class MyCardsAndTransactionHistory extends StatelessWidget {
-  const MyCardsAndTransactionHistory({super.key});
+class MyCardsAndTransactionHistorySection extends StatelessWidget {
+  const MyCardsAndTransactionHistorySection({super.key});
 
   @override
   Widget build(BuildContext context) {
