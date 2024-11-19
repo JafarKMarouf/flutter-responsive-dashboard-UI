@@ -4,7 +4,7 @@ import 'package:responsive_dashborad/utils/app_styles.dart';
 
 class IncomeDetails extends StatelessWidget {
   const IncomeDetails({super.key});
-  static const incomeListItems = [
+  static const items = [
     IncomeItemModel(
       color: Color(0xFF208CC8),
       title: 'Design service',
@@ -29,12 +29,12 @@ class IncomeDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      itemCount: incomeListItems.length,
-      itemBuilder: (context, index) {
-        return ItemDetails(incomeItemModel: incomeListItems[index]);
-      },
+    return Column(
+      children: items
+          .asMap()
+          .entries
+          .map((e) => ItemDetails(incomeItemModel: e.value))
+          .toList(),
     );
   }
 }

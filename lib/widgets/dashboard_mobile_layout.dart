@@ -12,11 +12,11 @@ class DashboardMobileLayout extends StatelessWidget {
       child: Column(
         children: [
           AllExpensesAndQuickInvoicSection(),
-          SizedBox(height: 24),
+          SizedBox(height: 16),
           MyCardsAndTransactionHistorySection(),
-          SizedBox(height: 24),
+          SizedBox(height: 16),
           IncomeSection(),
-          SizedBox(height: 24),
+          SizedBox(height: 16),
         ],
       ),
     );

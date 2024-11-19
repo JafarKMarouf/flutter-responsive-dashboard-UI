@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashborad/utils/size_config.dart';
 import 'package:responsive_dashborad/widgets/adaptive_layout_widget.dart';
 import 'package:responsive_dashborad/widgets/custome_drawer.dart';
 import 'package:responsive_dashborad/widgets/dashboard_desktop_layout.dart';
@@ -18,20 +19,18 @@ class _DashboradViewState extends State<DashboradView> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      appBar: MediaQuery.of(context).size.width < 900
+      appBar: MediaQuery.of(context).size.width < SizeConfig.tablet
           ? AppBar(
-              elevation: 0,
               leading: IconButton(
-                onPressed: () {
-                  scaffoldKey.currentState!.openDrawer();
-                },
+                onPressed: () => scaffoldKey.currentState!.openDrawer(),
                 icon: const Icon(Icons.menu),
               ),
               backgroundColor: const Color(0xFFFAFAFA),
+              elevation: 0,
             )
           : null,
       drawer: const CustomeDrawer(),
-      backgroundColor: const Color(0xFFFAFAFA),
+      backgroundColor: const Color(0xffE5E5E5),
       body: AdaptiveLayout(
         desktopLayout: (context) => const DashboardDesktopLayout(),
         tabletLayout: (context) => const DashboardTabletLayout(),
