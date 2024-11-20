@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashborad/models/transaction_model.dart';
-import 'package:responsive_dashborad/utils/app_styles.dart';
+import 'package:responsive_dashborad/core/utils/app_styles.dart';
 
 class TransactionItem extends StatelessWidget {
   const TransactionItem({
@@ -19,16 +19,17 @@ class TransactionItem extends StatelessWidget {
       child: ListTile(
         title: Text(
           transactionModel.title,
-          style: AppStyles.styleBold16.copyWith(color: const Color(0xff064061)),
+          style: AppStyles.styleBold16(context)
+              .copyWith(color: const Color(0xff064061)),
         ),
         subtitle: Text(
           transactionModel.date,
-          style:
-              AppStyles.styleRegular16.copyWith(color: const Color(0xffAAAAAA)),
+          style: AppStyles.styleRegular16(context)
+              .copyWith(color: const Color(0xffAAAAAA)),
         ),
         trailing: Text(
           transactionModel.amount,
-          style: AppStyles.styleBold18.copyWith(
+          style: AppStyles.styleBold18(context).copyWith(
             color: transactionModel.isWithdrawal
                 ? const Color(0xFFF3735E)
                 : const Color(0xFF7DD97B),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashborad/models/all_expenses_item_model.dart';
-import 'package:responsive_dashborad/utils/app_images.dart';
+import 'package:responsive_dashborad/core/utils/app_images.dart';
 import 'package:responsive_dashborad/widgets/all_expenses_item.dart';
 
 class AllExpensesItemsListView extends StatefulWidget {

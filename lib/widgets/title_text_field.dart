@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashborad/utils/app_styles.dart';
+import 'package:responsive_dashborad/core/utils/app_styles.dart';
 import 'package:responsive_dashborad/widgets/custome_text_field.dart';
 
 class TitleTextField extends StatelessWidget {
@@ -10,7 +10,7 @@ class TitleTextField extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(title, style: AppStyles.styleMedium16),
+        Text(title, style: AppStyles.styleMedium16(context)),
         const SizedBox(height: 12),
         CustomeTextFeild(hint: hint)
       ],

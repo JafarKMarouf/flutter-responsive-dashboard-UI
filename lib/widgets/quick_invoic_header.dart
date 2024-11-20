@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashborad/utils/app_styles.dart';
+import 'package:responsive_dashborad/core/utils/app_styles.dart';
 
 class QuickInvoicHeader extends StatelessWidget {
   const QuickInvoicHeader({super.key});
@@ -8,9 +8,9 @@ class QuickInvoicHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Text(
+        Text(
           'Quick Invoice',
-          style: AppStyles.styleBold20,
+          style: AppStyles.styleBold20(context),
         ),
         const Spacer(),
         Container(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashborad/utils/app_styles.dart';
+import 'package:responsive_dashborad/core/utils/app_styles.dart';
 
 class CustomeTextFeild extends StatelessWidget {
   const CustomeTextFeild({super.key, required this.hint});
@@ -9,7 +9,7 @@ class CustomeTextFeild extends StatelessWidget {
     return TextField(
       decoration: InputDecoration(
         hintText: hint,
-        hintStyle: AppStyles.styleRegular16.copyWith(
+        hintStyle: AppStyles.styleRegular16(context).copyWith(
           color: const Color(0xffAAAAAA),
         ),
         filled: true,

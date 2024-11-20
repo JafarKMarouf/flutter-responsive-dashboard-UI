@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashborad/models/drawer_item_model.dart';
 import 'package:responsive_dashborad/models/user_info_model.dart';
-import 'package:responsive_dashborad/utils/app_images.dart';
+import 'package:responsive_dashborad/core/utils/app_images.dart';
 import 'package:responsive_dashborad/widgets/active_inactive_drawer_item.dart';
 import 'package:responsive_dashborad/widgets/drawer_item_list_view.dart';
 import 'package:responsive_dashborad/widgets/user_info_list_tile.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashborad/utils/app_styles.dart';
+import 'package:responsive_dashborad/core/utils/app_styles.dart';
 import 'package:responsive_dashborad/widgets/transaction_header.dart';
 import 'package:responsive_dashborad/widgets/transaction_history_list_view.dart';
 
@@ -15,7 +15,7 @@ class TransactionHistory extends StatelessWidget {
         const SizedBox(height: 20),
         Text(
           '13 April 2024',
-          style: AppStyles.styleSemiBold16.copyWith(
+          style: AppStyles.styleSemiBold16(context).copyWith(
             color: const Color(0xffAAAAAA),
           ),
         ),

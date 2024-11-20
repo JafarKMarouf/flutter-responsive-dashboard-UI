@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashborad/utils/app_styles.dart';
+import 'package:responsive_dashborad/core/utils/app_styles.dart';
 
 class CustomeButton extends StatelessWidget {
   const CustomeButton(
@@ -21,7 +21,7 @@ class CustomeButton extends StatelessWidget {
         ),
         child: Text(
           title,
-          style: AppStyles.styleSemiBold18.copyWith(
+          style: AppStyles.styleSemiBold18(context).copyWith(
             color: textColor,
           ),
         ),

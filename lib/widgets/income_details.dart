@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashborad/models/income_item_model.dart';
-import 'package:responsive_dashborad/utils/app_styles.dart';
+import 'package:responsive_dashborad/core/utils/app_styles.dart';
 
 class IncomeDetails extends StatelessWidget {
   const IncomeDetails({super.key});
@@ -55,11 +55,11 @@ class ItemDetails extends StatelessWidget {
       ),
       title: Text(
         incomeItemModel.title,
-        style: AppStyles.styleRegular16,
+        style: AppStyles.styleRegular16(context),
       ),
       trailing: Text(
         '${incomeItemModel.percentage}%',
-        style: AppStyles.styleMedium16.copyWith(
+        style: AppStyles.styleMedium16(context).copyWith(
           color: const Color(0xFF208CC8),
         ),
       ),
