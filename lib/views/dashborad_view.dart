@@ -25,11 +25,12 @@ class _DashboradViewState extends State<DashboradView> {
                 onPressed: () => scaffoldKey.currentState!.openDrawer(),
                 icon: const Icon(Icons.menu),
               ),
-              backgroundColor: const Color(0xFFFAFAFA),
+              backgroundColor: const Color(0xffFFFFFF),
               elevation: 0,
             )
           : null,
       drawer: const CustomeDrawer(),
+      // backgroundColor: const Color(0xFFFAFAFA),
       backgroundColor: const Color(0xffE5E5E5),
       body: AdaptiveLayout(
         desktopLayout: (context) => const DashboardDesktopLayout(),

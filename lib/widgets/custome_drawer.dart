@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dashborad/models/drawer_item_model.dart';
 import 'package:responsive_dashborad/models/user_info_model.dart';
 import 'package:responsive_dashborad/core/utils/app_images.dart';
-import 'package:responsive_dashborad/widgets/active_inactive_drawer_item.dart';
+import 'package:responsive_dashborad/widgets/inactive_drawer_item.dart';
 import 'package:responsive_dashborad/widgets/drawer_item_list_view.dart';
 import 'package:responsive_dashborad/widgets/user_info_list_tile.dart';
 
@@ -20,7 +20,7 @@ class CustomeDrawer extends StatelessWidget {
       width: MediaQuery.sizeOf(context).width * .7,
       color: Colors.white,
       child: const Padding(
-        padding: EdgeInsets.symmetric(vertical: 40.0),
+        padding: EdgeInsets.only(top: 20.0, bottom: 10),
         child: CustomScrollView(
           slivers: [
             SliverToBoxAdapter(
@@ -30,7 +30,7 @@ class CustomeDrawer extends StatelessWidget {
             SliverFillRemaining(
               hasScrollBody: false,
               child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                padding: EdgeInsets.symmetric(horizontal: 10.0),
                 child: Column(
                   children: [
                     Expanded(child: SizedBox(height: 20)),
@@ -46,7 +46,6 @@ class CustomeDrawer extends StatelessWidget {
                         title: 'Logout Account',
                       ),
                     ),
-                    SizedBox(height: 48),
                   ],
                 ),
               ),

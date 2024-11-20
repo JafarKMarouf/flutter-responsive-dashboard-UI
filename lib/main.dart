@@ -8,7 +8,6 @@ void main() {
       enabled: true,
       builder: (context) => const ResponsiveDashBoard(),
     ),
-    // const ResponsiveDashBoard(),
   );
 }
 
