@@ -1,7 +1,6 @@
 # responsive_dashborad
 
-A new Flutter project.
-
+This project focuses on building a responsive user interface using Flutter, providing an optimal user experience on both mobile, tablet and desktop devices.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
