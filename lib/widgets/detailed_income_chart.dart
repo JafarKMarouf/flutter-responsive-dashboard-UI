@@ -1,6 +1,5 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_dashborad/models/pie_chart_section_data_model.dart';
 import 'package:responsive_dashborad/utils/app_styles.dart';
 
 class DetailedIncomeChart extends StatefulWidget {
