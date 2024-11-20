@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:responsive_dashborad/widgets/dots_indecator.dart';
 import 'package:responsive_dashborad/widgets/my_card_header.dart';
@@ -17,7 +19,7 @@ class _MyCardsSectionState extends State<MyCardsSection> {
   void initState() {
     pageController = PageController();
     pageController.addListener(() {
-      currentPageIndex = pageController.page!.round();
+      currentPageIndex = pageController.page!.round() % 3;
       setState(() {});
     });
     super.initState();

@@ -29,8 +29,9 @@ class _DashboradViewState extends State<DashboradView> {
               elevation: 0,
             )
           : null,
-      drawer: const CustomeDrawer(),
-      // backgroundColor: const Color(0xFFFAFAFA),
+      drawer: MediaQuery.of(context).size.width < SizeConfig.tablet
+          ? const CustomeDrawer()
+          : null,
       backgroundColor: const Color(0xffE5E5E5),
       body: AdaptiveLayout(
         desktopLayout: (context) => const DashboardDesktopLayout(),

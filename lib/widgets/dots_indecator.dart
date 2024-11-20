@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dashborad/widgets/dot_indecator.dart';
 
 class DotsIndecator extends StatelessWidget {
-  const DotsIndecator({super.key, required this.currentPageIndex});
+  const DotsIndecator({
+    super.key,
+    required this.currentPageIndex,
+  });
   final int currentPageIndex;
   @override
   Widget build(BuildContext context) {
